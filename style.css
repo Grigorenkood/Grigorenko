@@ -1,0 +1,89 @@
+div {
+  margin: 4px;
+}
+.wrapper {
+  display: inline-block;
+  align-items: center;
+
+  justify-content: center;
+}
+img {
+  display: block;
+
+  margin: 0 auto;
+  
+}
+
+img.rot {
+  animation: 4s linear 0s normal none infinite running rot;
+  -webkit-animation: 4s linear 0s normal none infinite running rot;
+  width: 300px;
+  height: 300px;
+}
+@keyframes rot {
+  50% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(0deg);
+  }
+}
+
+td {
+  color: black;
+  font-size: 25px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+.container {
+  height: 450px;
+  width: 360px;
+  box-shadow: 0 0 10px blue;
+  background-color: white;
+
+  display: flex;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.image {
+  border-radius: 6%;
+}
+
+.b-border {
+  border: 6px solid grey;
+  width: 150px;
+  height: 320px;
+  border-radius: 10%;
+
+  animation: animBlinkBorder 5s linear infinite;
+}
+@keyframes animBlinkBorder {
+  0% {
+    border-color: yellow;
+  }
+  50% {
+    border-color: green;
+  }
+  100% {
+    border-color: red;
+  }
+}
